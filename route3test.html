@@ -1,9 +1,7 @@
-  <!DOCTYPE html>
-
-  <html>
+<html>
 <body>
 
-  <title>INSERT NAME</title>
+ 
 
 </body>
 </html>
@@ -11,7 +9,7 @@
 
 <html>
 <CENTER>
-<body style="background-color: #9FA2B2;">
+<body style="background-color: #F49D6E;">
 
 </body>
 </html>
@@ -21,12 +19,12 @@
 <style>
 h1 {
     color: white;
-    font-family: Ariel;
+    font-family: courier;
     font-size: 300%;
 }
 p  {
-    color: black;
-    font-family: Ariel;
+    color: blue;
+    font-family: courier;
     font-size: 160%;
 }
   </body>
@@ -43,10 +41,12 @@ p  {
     border: none;
     cursor: pointer;
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
 }
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -55,16 +55,20 @@ p  {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
+
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
+
 .dropdown-content a:hover {background-color: #f1f1f1}
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
@@ -72,10 +76,13 @@ p  {
 </head>
 <body>
 
+<h2></h2>
 
 
 
-
+   
+  </div>
+</div>
 
 </body>
   
@@ -92,78 +99,116 @@ p  {
   </style>
 </head>
 <body> 
-  
-
-<h1>Route 3</h1>
+  <h1>Route 3</h1>
 
 </body>
 </html>
   <p>By Hani Ahmed, Jolie Chang, Kimberly Sykora-Lovaas
   
+
+
 <p>Purpose and Reasoning: To help people through their everyday problems</p>
 </body>
 </html>
   
   <p> How are you feeling?<p>
   
-  
-  
-  
-  
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html>
 <head>
 <style>
-#mySidenav a {
-    position: absolute;
-    left: -80px;
-    transition: 0.3s;
-    padding: 15px;
-    width: 100px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    border-radius: 0 5px 5px 0;
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
 }
-#mySidenav a:hover {
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
     left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
-#about {
-    top: 20px;
-    background-color: #4CAF50;
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
-#blog {
-    top: 80px;
-    background-color: #2196F3;
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
 }
-#projects {
-    top: 140px;
-    background-color: #f44336;
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
-#contact {
-    top: 200px;
-    background-color: #555
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 </style>
 </head>
 <body>
 
-
-<div style="margin-left:80px;">
-  
-  <p>Hover over the buttons in the left side navigation to open them.</p>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://kaneki7.github.io/portfolio/Route3 ">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
 </div>
+
+<div id="main">
+ 
+  
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
      
 </body>
 </html> 
 
- 
+    
     
     <!DOCTYPE html>
 <html>
 <head>
 <style>
 body {font-family: "Lato", sans-serif;}
+
 .tablink {
     background-color: #555;
     color: white;
@@ -175,9 +220,11 @@ body {font-family: "Lato", sans-serif;}
     font-size: 17px;
     width: 25%;
 }
+
 .tablink:hover {
     background-color: #777;
 }
+
 /* Style the tab content */
 .tabcontent {
     color: white;
@@ -185,10 +232,11 @@ body {font-family: "Lato", sans-serif;}
     padding: 50px;
     text-align: center;
 }
-#Bored {background-color: #1E3231;}
-#Happy {background-color: #485665;}
-#Sad{background-color: #80475E;}
-#Angry {background-color:#CC5A71;}
+
+#Bored {background-color: #A1E8AF;}
+#stressed {background-color: #98A886;}
+#sad {background-color: #372772;}
+#angry {background-color:#3A2449;}
 </style>
 </head>
 <body>
@@ -197,34 +245,28 @@ body {font-family: "Lato", sans-serif;}
 
 <div id="Bored" class="tabcontent">
   <h3>Bored</h3>
-  <p>Story 1.</p>
+  <p>story 1.</p>
 </div>
 
-<div id="Happy" class="tabcontent">
-  <h3>Happy</h3>
-  <p>Story 2.</p> 
+<div id="stressed" class="tabcontent">
+  <h3>stressed</h3>
+  <p>story 2.</p> 
 </div>
 
-<div id="Sad" class="tabcontent">
-  <h3>Sad</h3>
-  <p>Story 3.</p>
+<div id="sad" class="tabcontent">
+  <h3>sad</h3>
+  <p>story 3.</p>
 </div>
 
-<div id="Angry" class="tabcontent">
-  <h3>Angry</h3>
-  <p>Story 4.</p>
+<div id="angry" class="tabcontent">
+  <h3>angry</h3>
+  <p>story 4.</p>
 </div>
 
-<div id="Happy" class="tabcontent">
-  <h3>Happy</h3>
-  <p>Story 5.</p>
-</div>
-
-<button class="tablink" onclick="openCity('Bored', this, '#1E3231')" id="defaultOpen">Bored</button>
-<button class="tablink" onclick="openCity('Happy', this, '#485665')">Happy</button>
-<button class="tablink" onclick="openCity('Sad', this, '#80475E')">Sad</button>
-<button class="tablink" onclick="openCity('Angry', this, '#CC5A71')">Angry</button>
-
+<button class="tablink" onclick="openCity('Bored', this, 'red')" id="defaultOpen">Bored</button>
+<button class="tablink" onclick="openCity('stressed', this, 'green')">stressed</button>
+<button class="tablink" onclick="openCity('sad', this, 'blue')">sad</button>
+<button class="tablink" onclick="openCity('angry', this, 'orange')">angry</button>
 
 <script>
 function openCity(cityName,elmnt,color) {
@@ -239,6 +281,7 @@ function openCity(cityName,elmnt,color) {
     }
     document.getElementById(cityName).style.display = "block";
     elmnt.style.backgroundColor = color;
+
 }
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
@@ -258,20 +301,42 @@ document.getElementById("defaultOpen").click();
   cursor: pointer;
   outline: none;
   color: #fff;
-  background-color: #FF715B;
+  background-color: #27752d;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #C6C5B9;
+  box-shadow: 0 9px #999;
 }
-.button:hover {background-color: #FF715B}
+
+.button:hover {background-color: #27752d}
+
 .button:active {
-  background-color: #FF715B;
-  box-shadow: 0 5px #C6C5B9;
+  background-color: #27752d;
+  box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+  
+  
   </style>
 </head>
 <body>
   
 <button class="button">start the story</button>
   </CENTER>
+       
+
+<a href="https://joliechang.github.io/Route3/route3test
+
+/">Hyperlink Code</a>
+       
+       
+
+
+
+
+
+
+
+
+
+
+
