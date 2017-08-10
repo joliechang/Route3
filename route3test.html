@@ -1,30 +1,109 @@
-<html>
+
+  <html>
 <body>
 
- 
+  <title>INSERT NAME</title>
+
+</body>
+
+<style>
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+</style>
+
+<script>
+/* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<body style="background-color: #9FA2B2;">
 
 </body>
 </html>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About Us</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
+</div>
 
 
-<html>
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+  
+</div>
 <CENTER>
-<body style="background-color: #F49D6E;">
-
-</body>
-</html>
-
   
 <head>
 <style>
+ 
 h1 {
     color: white;
-    font-family: courier;
+    font-family: Ariel;
     font-size: 300%;
 }
 p  {
-    color: blue;
-    font-family: courier;
+    color: black;
+    font-family: Ariel;
     font-size: 160%;
 }
   </body>
@@ -41,12 +120,10 @@ p  {
     border: none;
     cursor: pointer;
 }
-
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -55,40 +132,24 @@ p  {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
-
 .dropdown-content a:hover {background-color: #f1f1f1}
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
 </style>
 </head>
-<body>
 
-<h2></h2>
-
-
-
-   
-  </div>
-</div>
-
-</body>
   
 </html>
-
-
 
 </body>
 </html>
@@ -99,116 +160,33 @@ p  {
   </style>
 </head>
 <body> 
-  <h1>Route 3</h1>
+  
+
+<h1>Route 3</h1>
 
 </body>
 </html>
   <p>By Hani Ahmed, Jolie Chang, Kimberly Sykora-Lovaas
   
-
-
 <p>Purpose and Reasoning: To help people through their everyday problems</p>
 </body>
 </html>
   
   <p> How are you feeling?<p>
   
-
-    <!DOCTYPE html>
-<html>
-<head>
-<style>
-body {
-    font-family: "Lato", sans-serif;
-    transition: background-color .5s;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
-</head>
-<body>
-
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="https://kaneki7.github.io/portfolio/Route3 ">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
-
-<div id="main">
- 
   
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-</div>
-
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.body.style.backgroundColor = "white";
-}
-</script>
+  
+  
+  
+ 
      
 </body>
 </html> 
-
-    
-    
     <!DOCTYPE html>
 <html>
 <head>
 <style>
 body {font-family: "Lato", sans-serif;}
-
 .tablink {
     background-color: #555;
     color: white;
@@ -220,11 +198,9 @@ body {font-family: "Lato", sans-serif;}
     font-size: 17px;
     width: 25%;
 }
-
 .tablink:hover {
     background-color: #777;
 }
-
 /* Style the tab content */
 .tabcontent {
     color: white;
@@ -232,11 +208,10 @@ body {font-family: "Lato", sans-serif;}
     padding: 50px;
     text-align: center;
 }
-
-#Bored {background-color: #A1E8AF;}
-#stressed {background-color: #98A886;}
-#sad {background-color: #372772;}
-#angry {background-color:#3A2449;}
+#Bored {background-color: #1E3231;}
+#Happy {background-color: #485665;}
+#Sad{background-color: #80475E;}
+#Angry {background-color:#CC5A71;}
 </style>
 </head>
 <body>
@@ -245,28 +220,34 @@ body {font-family: "Lato", sans-serif;}
 
 <div id="Bored" class="tabcontent">
   <h3>Bored</h3>
-  <p>story 1.</p>
+  <p>Story 1.</p>
 </div>
 
-<div id="stressed" class="tabcontent">
-  <h3>stressed</h3>
-  <p>story 2.</p> 
+<div id="Happy" class="tabcontent">
+  <h3>Happy</h3>
+  <p>Story 2.</p> 
 </div>
 
-<div id="sad" class="tabcontent">
-  <h3>sad</h3>
-  <p>story 3.</p>
+<div id="Sad" class="tabcontent">
+  <h3>Sad</h3>
+  <p>Story 3.</p>
 </div>
 
-<div id="angry" class="tabcontent">
-  <h3>angry</h3>
-  <p>story 4.</p>
+<div id="Angry" class="tabcontent">
+  <h3>Angry</h3>
+  <p>Story 4.</p>
 </div>
 
-<button class="tablink" onclick="openCity('Bored', this, 'red')" id="defaultOpen">Bored</button>
-<button class="tablink" onclick="openCity('stressed', this, 'green')">stressed</button>
-<button class="tablink" onclick="openCity('sad', this, 'blue')">sad</button>
-<button class="tablink" onclick="openCity('angry', this, 'orange')">angry</button>
+<div id="Happy" class="tabcontent">
+  <h3>Happy</h3>
+  <p>Story 5.</p>
+</div>
+
+<button class="tablink" onclick="openCity('Bored', this, '#1E3231')" id="defaultOpen">Bored</button>
+<button class="tablink" onclick="openCity('Happy', this, '#485665')">Happy</button>
+<button class="tablink" onclick="openCity('Sad', this, '#80475E')">Sad</button>
+<button class="tablink" onclick="openCity('Angry', this, '#CC5A71')">Angry</button>
+
 
 <script>
 function openCity(cityName,elmnt,color) {
@@ -281,7 +262,6 @@ function openCity(cityName,elmnt,color) {
     }
     document.getElementById(cityName).style.display = "block";
     elmnt.style.backgroundColor = color;
-
 }
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
@@ -301,21 +281,17 @@ document.getElementById("defaultOpen").click();
   cursor: pointer;
   outline: none;
   color: #fff;
-  background-color: #27752d;
+  background-color: #FF715B;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
+  box-shadow: 0 9px #C6C5B9;
 }
-
-.button:hover {background-color: #27752d}
-
+.button:hover {background-color: #FF715B}
 .button:active {
-  background-color: #27752d;
-  box-shadow: 0 5px #666;
+  background-color: #FF715B;
+  box-shadow: 0 5px #C6C5B9;
   transform: translateY(4px);
 }
-  
-  
   </style>
 </head>
 <body>
@@ -323,20 +299,5 @@ document.getElementById("defaultOpen").click();
 <button class="button">start the story</button>
   </CENTER>
        
-
-<a href="https://joliechang.github.io/Route3/route3test
-
-/">Hyperlink Code</a>
-       
-       
-
-
-
-
-
-
-
-
-
 
 
